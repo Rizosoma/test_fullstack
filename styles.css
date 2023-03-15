@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .main {
+    width: 900px;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding-top: 60px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 1000;
+    width: 900px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content > div {
+    margin-bottom: 8px;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .menu {
+      flex-direction: column;
+    }
+  }
